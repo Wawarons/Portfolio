@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8c62b936.chunk.css",
+    "main.js": "/Portfolio/static/js/main.a975f1e4.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.a975f1e4.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.5d68f097.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5d68f097.js.map",
+    "static/js/2.0ea13a6d.chunk.js": "/Portfolio/static/js/2.0ea13a6d.chunk.js",
+    "static/js/2.0ea13a6d.chunk.js.map": "/Portfolio/static/js/2.0ea13a6d.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.8c62b936.chunk.css.map": "/Portfolio/static/css/main.8c62b936.chunk.css.map",
+    "static/js/2.0ea13a6d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.0ea13a6d.chunk.js.LICENSE.txt",
+    "static/media/CalculatriceProjet.25053fc8.png": "/Portfolio/static/media/CalculatriceProjet.25053fc8.png",
+    "static/media/FreeGamesProjet.aa5966b0.png": "/Portfolio/static/media/FreeGamesProjet.aa5966b0.png",
+    "static/media/Logo.df831f11.png": "/Portfolio/static/media/Logo.df831f11.png",
+    "static/media/PortfolioProjet.4fffb936.png": "/Portfolio/static/media/PortfolioProjet.4fffb936.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d68f097.js",
+    "static/js/2.0ea13a6d.chunk.js",
+    "static/css/main.8c62b936.chunk.css",
+    "static/js/main.a975f1e4.chunk.js"
+  ]
+}
