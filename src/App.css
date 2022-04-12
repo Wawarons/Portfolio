@@ -1,0 +1,1376 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  background: #f8f8f8;
+  font-family: "Fira Code", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+}
+
+nav #reseaux img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav #reseaux img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#contain {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  width: 80%;
+  margin: 45px auto 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contain #home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#contain #home h1 {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#contain #home h1:hover {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+}
+
+#contain #home p {
+  width: 85%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border-radius: 30px;
+  padding: 15px 0;
+}
+
+#contain #home .hidden {
+  opacity: 0;
+}
+
+#contain #home .no-hidden {
+  opacity: 1;
+}
+
+#contain #home #presentation, #contain #home #formation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+#home,
+#contact,
+#contain-projets,
+#projets {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#projets {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#projets #contain-projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 15px 0;
+  position: relative;
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.45);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.45);
+  border-radius: 30px;
+  background: #eeeeee;
+}
+
+#projets #contain-projets::-webkit-scrollbar {
+  height: 8px;
+}
+
+#projets #contain-projets::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#projets #contain-projets::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+}
+
+#projets #contain-projets .projet {
+  text-align: center;
+  padding: 15px;
+}
+
+#projets #contain-projets .projet .projet-img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#projets #contain-projets .projet .projet-img:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+#projets #explication-projets {
+  width: 95%;
+}
+
+#projets #explication-projets #projet-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 8% 0;
+}
+
+#projets #explication-projets #projet-1 h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#projets #explication-projets #projet-1 .details-projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#projets #explication-projets #projet-1 .details-projets .projet-img {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#projets #explication-projets #projet-1 .details-projets .projet-img img {
+  width: auto;
+  height: 200px;
+}
+
+#projets #explication-projets #projet-1 .details-projets #description-site {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#projets #explication-projets #projet-1 .details-projets #description-site p {
+  margin: 5px 0;
+}
+
+#projets #explication-projets #projet-1 .details-projets #description-site p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#projets #explication-projets #projet-1 .details-projets #description-site ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projets #explication-projets #projet-1 .details-projets #description-site ul li {
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#projets #explication-projets #projet-1 .details-projets #description-site ul li:hover {
+  cursor: default;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#projets #explication-projets #projet-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 8% 0;
+}
+
+#projets #explication-projets #projet-2 h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#projets #explication-projets #projet-2 .details-projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#projets #explication-projets #projet-2 .details-projets .projet-img {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#projets #explication-projets #projet-2 .details-projets .projet-img img {
+  width: auto;
+  height: 200px;
+}
+
+#projets #explication-projets #projet-2 .details-projets #description-site {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#projets #explication-projets #projet-2 .details-projets #description-site p {
+  margin: 5px 0;
+}
+
+#projets #explication-projets #projet-2 .details-projets #description-site p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#projets #explication-projets #projet-2 .details-projets #description-site ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projets #explication-projets #projet-2 .details-projets #description-site ul li {
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#projets #explication-projets #projet-2 .details-projets #description-site ul li:hover {
+  cursor: default;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#projets #explication-projets #projet-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 8% 0;
+}
+
+#projets #explication-projets #projet-3 h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#projets #explication-projets #projet-3 .details-projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#projets #explication-projets #projet-3 .details-projets .projet-img {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#projets #explication-projets #projet-3 .details-projets .projet-img img {
+  width: auto;
+  height: 200px;
+}
+
+#projets #explication-projets #projet-3 .details-projets #description-site {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#projets #explication-projets #projet-3 .details-projets #description-site p {
+  margin: 5px 0;
+}
+
+#projets #explication-projets #projet-3 .details-projets #description-site p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#projets #explication-projets #projet-3 .details-projets #description-site ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projets #explication-projets #projet-3 .details-projets #description-site ul li {
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#projets #explication-projets #projet-3 .details-projets #description-site ul li:hover {
+  cursor: default;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#contain-competences {
+  height: 100%;
+}
+
+#contain-competences::-webkit-scrollbar {
+  width: 5px;
+}
+
+#contain-competences::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#contain-competences::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+#contain-competences #competences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+#contain-competences #competences .svg-container {
+  margin: 0 5px;
+}
+
+#contain-competences #competences .svg-container svg circle {
+  stroke-width: 10px;
+  fill: transparent;
+  stroke-dasharray: 535px;
+  -webkit-filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+@-webkit-keyframes pourcentagesLoad {
+  from {
+    stroke-dashoffset: 535;
+  }
+}
+
+@keyframes pourcentagesLoad {
+  from {
+    stroke-dashoffset: 535;
+  }
+}
+
+#contain-competences #competences .svg-container svg #circleSvg_html {
+  stroke: orange;
+}
+
+#contain-competences #competences .svg-container svg #circleSvg_css {
+  stroke: skyblue;
+}
+
+#contain-competences #competences .svg-container svg #circleSvg_javascript {
+  stroke: yellow;
+}
+
+#contain-competences #competences .svg-container svg #circleSvg_sass {
+  stroke: pink;
+}
+
+#contain-competences #competences .svg-container svg text {
+  font-weight: bold;
+  font-family: "Questrial", sans-serif;
+  letter-spacing: 1px;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  margin: 5px 0;
+}
+
+#contact form {
+  position: relative;
+  width: 75%;
+  height: 98%;
+  margin: 0 auto;
+  padding: 0 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f8f8f8;
+}
+
+#contact form .error {
+  visibility: visible;
+  position: initial;
+  color: red;
+}
+
+#contact form .hide {
+  visibility: hidden;
+}
+
+.ellipses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2px auto;
+}
+
+.ellipses svg {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 320px) {
+  #contain {
+    height: 430px;
+  }
+  nav #categories {
+    padding: 15px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav #categories a {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+  }
+  nav #categories a:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.344);
+  }
+  nav #logo {
+    visibility: hidden;
+    position: absolute;
+  }
+  nav #reseaux {
+    width: 75%;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav #reseaux img {
+    width: 25px;
+    height: 25px;
+  }
+  #home h1 {
+    position: relative;
+    left: 5%;
+    font-size: 3em;
+  }
+  #home p {
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px;
+    left: 15%;
+    font-size: 0.9em;
+  }
+  #contain-projets .projet {
+    margin: 0 10px;
+  }
+  #contain-projets .projet h3 {
+    font-size: 0.9em;
+  }
+  #contain-projets .projet img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+  }
+  #contact input:not(input[type="image"]),
+  #contact textarea {
+    font-family: "Questrial", sans-serif;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin: 5px 0;
+    -webkit-box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+    resize: none;
+    background-color: #ffff;
+  }
+  #contact input {
+    height: 25px;
+  }
+  #contact input[type="image"] {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin: 5px 0;
+    -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+  }
+  #contact input[type="image"]:active {
+    -webkit-filter: none;
+            filter: none;
+  }
+  #contact label {
+    visibility: hidden;
+    position: absolute;
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 1050px) {
+  #contain {
+    height: 70vh;
+  }
+  nav #categories {
+    padding: 15px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav #categories a {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+  }
+  nav #categories a:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.344);
+  }
+  nav #logo {
+    visibility: hidden;
+    position: absolute;
+  }
+  nav #reseaux {
+    width: 75%;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav #reseaux img {
+    width: 25px;
+    height: 25px;
+  }
+  #home {
+    margin: 25px 0;
+  }
+  #home h1 {
+    position: relative;
+    left: 2%;
+    font-size: 2.85em;
+  }
+  #home p {
+    width: 75%;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px;
+    font-size: 0.9em;
+  }
+  #projets #contain-projets .projet {
+    margin: 0 10px;
+  }
+  #projets #contain-projets .projet h3 {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+  #projets #contain-projets .projet .projet-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  }
+  #projets #contain-projets .projet .projet-img img {
+    width: auto;
+    height: 250px;
+  }
+  #projets #explication-projets #projet-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 8% 0;
+  }
+  #projets #explication-projets #projet-1 h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #projets #explication-projets #projet-1 .details-projets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  #projets #explication-projets #projet-1 .details-projets .projet-img {
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  #projets #explication-projets #projet-1 .details-projets .projet-img img {
+    width: auto;
+    height: 200px;
+  }
+  #projets #explication-projets #projet-1 .details-projets #description-site {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #projets #explication-projets #projet-1 .details-projets #description-site p {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  #projets #explication-projets #projet-1 .details-projets #description-site p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  #projets #explication-projets #projet-1 .details-projets #description-site ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #projets #explication-projets #projet-1 .details-projets #description-site ul li {
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1em;
+  }
+  #projets #explication-projets #projet-1 .details-projets #description-site ul li:hover {
+    cursor: default;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  #projets #explication-projets #projet-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 8% 0;
+  }
+  #projets #explication-projets #projet-2 h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #projets #explication-projets #projet-2 .details-projets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  #projets #explication-projets #projet-2 .details-projets .projet-img {
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  #projets #explication-projets #projet-2 .details-projets .projet-img img {
+    width: auto;
+    height: 200px;
+  }
+  #projets #explication-projets #projet-2 .details-projets #description-site {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #projets #explication-projets #projet-2 .details-projets #description-site p {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  #projets #explication-projets #projet-2 .details-projets #description-site p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  #projets #explication-projets #projet-2 .details-projets #description-site ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #projets #explication-projets #projet-2 .details-projets #description-site ul li {
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1em;
+  }
+  #projets #explication-projets #projet-2 .details-projets #description-site ul li:hover {
+    cursor: default;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  #projets #explication-projets #projet-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 8% 0;
+  }
+  #projets #explication-projets #projet-3 h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #projets #explication-projets #projet-3 .details-projets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  #projets #explication-projets #projet-3 .details-projets .projet-img {
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  #projets #explication-projets #projet-3 .details-projets .projet-img img {
+    width: auto;
+    height: 200px;
+  }
+  #projets #explication-projets #projet-3 .details-projets #description-site {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #projets #explication-projets #projet-3 .details-projets #description-site p {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  #projets #explication-projets #projet-3 .details-projets #description-site p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  #projets #explication-projets #projet-3 .details-projets #description-site ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #projets #explication-projets #projet-3 .details-projets #description-site ul li {
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1em;
+  }
+  #projets #explication-projets #projet-3 .details-projets #description-site ul li:hover {
+    cursor: default;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  #contact input:not(input[type="image"]),
+  #contact textarea {
+    font-family: "Questrial", sans-serif;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin: 5px 0;
+    -webkit-box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+    resize: none;
+    background-color: #ffff;
+  }
+  #contact input {
+    height: 25px;
+  }
+  #contact input[type="image"] {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin: 5px 0;
+    -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+  }
+  #contact input[type="image"]:active {
+    -webkit-filter: none;
+            filter: none;
+  }
+  #contact label {
+    visibility: hidden;
+    position: absolute;
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1650px) {
+  #contain {
+    height: 70vh;
+  }
+  nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5em;
+  }
+  nav #categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 75%;
+  }
+  nav #categories a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 0 50px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  }
+  nav #categories a:hover {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+  nav #reseaux a {
+    margin: 0 15px;
+  }
+  nav #reseaux img {
+    width: 25px;
+    height: 25px;
+  }
+  nav #logo {
+    width: 35px;
+    height: 35px;
+  }
+  #home h1 {
+    position: relative;
+    left: -5%;
+    width: 720px;
+    font-size: 6em;
+  }
+  #home p {
+    position: relative;
+    left: 5%;
+    word-break: normal;
+    font-size: 1.2em;
+  }
+  #home #presentation, #home #formation {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 90%;
+  }
+  #home #formation {
+    margin-bottom: 15%;
+  }
+  #projets #contain-projets .projet {
+    margin: 0 20px;
+  }
+  #projets #contain-projets .projet h3 {
+    font-size: 1.3em;
+    margin-top: 5px;
+  }
+  #projets #contain-projets .projet .projet-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+  }
+  #projets #contain-projets .projet img {
+    width: auto;
+    height: 200px;
+  }
+  #contact h2 {
+    font-size: 2em;
+  }
+  #contact input:not(input[type="image"]),
+  #contact textarea {
+    font-family: "Questrial", sans-serif;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin: 5px 0;
+    -webkit-box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+    resize: none;
+    background-color: #ffff;
+  }
+  #contact input {
+    height: 25px;
+  }
+  #contact input[type="image"] {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin: 5px 0;
+    -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+  }
+  #contact input[type="image"]:active {
+    -webkit-filter: none;
+            filter: none;
+  }
+  #contact label {
+    visibility: hidden;
+    position: absolute;
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  #contain {
+    height: 75%;
+  }
+  nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3em;
+  }
+  nav #categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 80%;
+  }
+  nav #categories a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 0 50px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  nav #categories a:hover {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+  nav #reseaux a {
+    margin: 0 25px;
+  }
+  nav #reseaux img {
+    width: 40px;
+    height: 40px;
+  }
+  nav #logo {
+    width: 35px;
+    height: 35px;
+  }
+  #home h1 {
+    position: relative;
+    left: 2%;
+    width: 720px;
+    font-size: 9em;
+  }
+  #home p {
+    letter-spacing: 1px;
+    position: relative;
+    left: 15%;
+    font-size: 3.2em;
+  }
+  #contain-projets .projet {
+    margin: 0 20px;
+  }
+  #contain-projets .projet h3 {
+    font-size: 1.3em;
+    margin-top: 5px;
+  }
+  #contain-projets .projet .projet-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+  }
+  #contain-projets .projet img {
+    width: auto;
+    height: 250px;
+  }
+  #contact h2 {
+    font-size: 4em;
+  }
+  #contact input:not(input[type="image"]),
+  #contact textarea {
+    font-family: "Questrial", sans-serif;
+    font-size: 2em;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin: 5px 0;
+    -webkit-box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 1px 2px 1px 1px rgba(0, 0, 0, 0.15);
+    resize: none;
+    background-color: #ffff;
+  }
+  #contact input {
+    height: 50px;
+  }
+  #contact input[type="image"] {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin: 5px 0;
+    -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.7));
+  }
+  #contact input[type="image"]:active {
+    -webkit-filter: none;
+            filter: none;
+  }
+  #contact label {
+    visibility: hidden;
+    position: absolute;
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=App.css.map */
