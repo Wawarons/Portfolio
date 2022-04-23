@@ -46,10 +46,11 @@ const Home = () => {
             </div>
             <div id = "formation" className='hidden'>
             <h1>Formations</h1>
-                    <p>J'ai obtenu un baccalauréat Sciences et Technologies du Développement Durable en 2019 qui m'a permis d'obtenir les bases concernant le fonctionnement d'un ordinateur, tels que le binaire, les divers composants ect.
+                    <p>J'ai obtenu un baccalauréat Sciences et Technologies du Développement Durable en 2019 qui m'a permis de faire un premier pas dans le monde de l'informatique.
+                    À travers cette formation, j'ai pu obtenir les bases fondamental tel que le fonctionnement d'un ordinateur, la compréhension du binaire, la gestion de projets en groupe etc.
                     <br/>
                     <br/>
-                    Puis j'ai intégré la  licence informatique pour approfondir mes connaissances. S'il y a une certaine aisance avec les langages de programmation, l'aspect mathématique de la licence n'est pas mon fort. J'ai donc décidé de redoubler ma deuxième année dans le but de corriger ces lacunes et de me consacrer à mes projets personnels comme la création de mon portfolio etc.
+                    Par la suite j'ai intégré une licence informatique pour approfondir mes connaissances. Même si j'ai une certaine aisance avec les langages de programmation, l'aspect mathématique de la licence n'est pas mon fort. J'ai donc pris la décision de redoubler ma deuxième année dans le but de corriger ces lacunes et de me consacrer à mes projets personnels comme la création de mon portfolio, etc.
                     </p>
             </div>
         </div>
