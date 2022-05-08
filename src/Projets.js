@@ -1,94 +1,86 @@
 import React from 'react';
+import ProjetsCard from './dist/components/ProjetsCard';
 import FreeGamesProjetImg from './images/FreeGamesProjet.png';
 import PortfolioProjetImg from './images/PortfolioProjet.png';
-import CalculatriceProjet from './images/CalculatriceProjet.png';
+import CalculatriceProjetImg from './images/CalculatriceProjet.png';
+import ProjetsFrame from './dist/components/ProjetsFrame';
 
 const Projets = () => {
+    const Projets = []
+    const ProjetsVitrine = []
+    const projetsListe = 
+
+    /* Liste des projets avec leurs details */
+    [   {
+                        'title': "Portfolio",
+
+                        'url': "https://wawarons.github.io/Portfolio",
+
+                        'description': "Création de mon portfolio. Ce site a été créé dans le but de donner un aperçu de mes compétences et du travail que je peux offrir en résumant les différents projets que j'ai réalisés jusqu'à présent. Et contient un résumé de mes compétences.", 
+
+                        'langages': ['Javascript','ReactJS','HTML','CSS/SCSS'],
+                        
+                        'number': 1, 
+                        
+                        'ProjetImg': PortfolioProjetImg
+                    },
+        {
+                        'title': "Free-Games",
+
+                        'url': "https://wawarons.github.io/Free-Games/",
+
+                        'description': "Un site Web appelé Free Games qui dévoile les données de milliers de jeux vidéo pouvant être joués sur différentes plateformes. La particularité de ces jeux est qu'ils sont tous gratuits. Ce site est construit à l'aide de l'API de base de données de jeux <a href='https://www.freetogame.com/api-doc' target='_blank' rel = 'noreferrer'>free-to-play Games Database.", 
+
+                        'langages': ['Javascript','ReactJS','HTML','CSS/SCSS'],
+                        
+                        'number': 2, 
+                        
+                        'ProjetImg':  FreeGamesProjetImg
+                    },
+        {
+                        'title': "Calculatrice",
+
+                        'url': "https://wawarons.github.io/Calculatrice/",
+
+                        'description': "Site web représentant une calculatrice permettant de faire divers calculs basiques, additions, soustractions, divisions.", 
+
+                        'langages': ['Javascript','HTML','CSS/SCSS'],
+                        
+                        'number': 3, 
+                        
+                        'ProjetImg': CalculatriceProjetImg
+                    }
+
+    ]
+
+    /* Présentation des projets*/ 
+    const ProjetPresentation = () => {
+        projetsListe.forEach((element, index) => {
+            ProjetsVitrine.push(<ProjetsFrame key = {index} title = {element.title} url = {element.url} img = {element.ProjetImg}></ProjetsFrame>)
+        })
+
+        return ProjetsVitrine
+    }
+    /* Description des projets */
+    const projetsDescription = () => {
+        projetsListe.forEach((element, index) => {
+            /* title, url, description, langages, number, ProjetImg */
+            Projets.push(<ProjetsCard key = {index} title = {element.title} url = {element.url} description = {element.description} langages = {element.langages} number =  {element.number} ProjetImg = {element.ProjetImg}></ProjetsCard>)
+
+        }); 
+
+        return Projets
+    }
+
+    /* Affichage */
     return (
         <div id="projets">
             <div id = "contain-projets">
-
-                <div className = "projet">
-                    <div className = "projet-img">
-                        <a href="https://Wawarons.github.io/Free-Games" target = "_blank" rel="noreferrer"><img src={FreeGamesProjetImg} alt="Projet Free-Games" /></a>
-                    </div>
-                <h3>Free Games</h3>
-                </div>
-
-                <div className="projet">
-                    <div className="projet-img">
-                        <a href="https://Wawarons.github.io/Portfolio" target = "_blank" rel="noreferrer"><img src={PortfolioProjetImg} alt="Projet Portfolio" /></a>
-                    </div>
-                    <h3>Portfolio</h3>
-                </div>
-
-                <div className="projet">
-                    <div className="projet-img">
-                        <a href="https://Wawarons.github.io/Calculatrice" target = "_blank" rel="noreferrer"><img src={CalculatriceProjet} alt="Projet Calculatrice" /></a>
-                    </div>
-                    <h3>Calculatrice</h3>
-                </div>
-
+                {ProjetPresentation()}
             </div>
 
             <div id="explication-projets">
-                <div id="projet-1">
-                    <h2>Portfolio</h2>
-                    <div className="details-projets">
-                        <div className = "projet-img">
-                            <a href="https://Wawarons.github.io/Portfolio" target = "_blank" rel="noreferrer"><img src={PortfolioProjetImg} alt="Projet Free-Games" /></a>
-                        </div>
-                        <div id ="description-site">
-                            <p>Création de mon portfolio. Ce site a été créé dans le but de donner un aperçu de mes compétences et du travail que je peux offrir en résumant les différents projets que j'ai réalisés jusqu'à présent.
-                            Et contient un résumé de mes compétences.</p>
-
-                            <ul id='langages'>
-                                <li>Javascript</li>
-                                <li>ReactJS</li>
-                                <li>HTML</li>
-                                <li>CSS/SCSS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="projet-2">
-                    <h2>Free Games</h2>
-                    <div className="details-projets">
-                    <div className = "projet-img">
-                        <a href="https://Wawarons.github.io/Free-Games" target = "_blank" rel="noreferrer"><img src={FreeGamesProjetImg} alt="Projet Free-Games" /></a>
-                    </div>
-                    <div id ="description-site">
-                    <p>Un site Web appelé Free Games qui dévoile les données de milliers de jeux vidéo pouvant être joués sur différentes plateformes. La particularité de ces jeux est qu'ils sont tous gratuits. Ce site est construit à l'aide de l'API de base de données de jeux <a href='https://www.freetogame.com/api-doc' target="_blank" rel = "noreferrer">free-to-play Games Database.</a></p>
-
-                    <ul id='langages'>
-                        <li>Javascript</li>
-                        <li>ReactJS</li>
-                        <li>HTML</li>
-                        <li>CSS/SCSS</li>
-                    </ul>
-                    </div>
-
-                </div>
-                </div>
-                <div id="projet-3">
-                    <h2>Calculatrice</h2>
-                    <div className="details-projets">
-                        <div className = "projet-img">
-                            <a href="https://Wawarons.github.io/Calculatrice" target = "_blank" rel="noreferrer"><img src={CalculatriceProjet} alt="Projet Free-Games" /></a>
-                        </div>
-                        <div id ="description-site">
-                        <p>Site web représentant une calculatrice permettant de faire divers calculs basiques, additions, soustractions, divisions.</p>
-
-                        <ul id='langages'>
-                            <li>Javascript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                        </div>
-
-                </div>
-                </div>
+                {projetsDescription()}
             </div>
         </div>
     );

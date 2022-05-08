@@ -3,9 +3,11 @@ const Home = () => {
     setTimeout(() => {
         const home = document.getElementById("home");
         const presentation = document.getElementById("presentation");
-        const formation = document.getElementById("formation")
-        let scrollMax = home.scrollHeight
-        let userScroll = false 
+        const formation = document.getElementById("formation");
+        let scrollMax = home.scrollHeight;
+        let userScroll = false;
+
+        /* Gestion de la transition des paragraphes de l'accueill */
         home.addEventListener("scroll", (e) => {
             let scrollNumber = e.target.scrollTop
             if (scrollNumber > 0 && scrollNumber < scrollMax) {
@@ -13,19 +15,20 @@ const Home = () => {
             }
             if (e.target.scrollTop > scrollMax/3) {
                 formation.classList.remove("hidden");
-                formation.classList.add("no-hidden")
-                presentation.classList.remove("no-hidden")
+                formation.classList.add("no-hidden");
+
+                presentation.classList.remove("no-hidden");
                 presentation.classList.add("hidden");
             }else{
                 presentation.classList.remove("hidden");
-                presentation.classList.add("no-hidden")
-                formation.classList.remove("no-hidden")
+                presentation.classList.add("no-hidden");
+
+                formation.classList.remove("no-hidden");
                 formation.classList.add("hidden");
             }
         })
 
         if (userScroll === false) {
-            console.log(formation.offsetTop);
             setInterval(() => {
                 home.scrollTop = formation.offsetHeight
             }, 20000)
@@ -34,9 +37,9 @@ const Home = () => {
             },40000)
         }
 
-        
-        
     }, 500)
+
+    /* Affichage de l'accueil */
     return (
         <div id = "home">
             <div id="presentation" className='no-hidden'>
