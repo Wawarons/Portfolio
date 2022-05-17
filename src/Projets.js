@@ -29,7 +29,7 @@ const Projets = () => {
 
                         'url': "https://wawarons.github.io/Free-Games/",
 
-                        'description': "Un site Web appelé Free Games qui dévoile les données de milliers de jeux vidéo pouvant être joués sur différentes plateformes. La particularité de ces jeux est qu'ils sont tous gratuits. Ce site est construit à l'aide de l'API de base de données de jeux <a href='https://www.freetogame.com/api-doc' target='_blank' rel = 'noreferrer'>free-to-play Games Database.", 
+                        'description': "Un site Web appelé Free Games qui dévoile les données de milliers de jeux vidéo pouvant être joués sur différentes plateformes. La particularité de ces jeux est qu'ils sont tous gratuits. Ce site est construit à l'aide de l'API de base de données de jeux free-to-play Games Database.", 
 
                         'langages': ['Javascript','ReactJS','HTML','CSS/SCSS'],
                         
