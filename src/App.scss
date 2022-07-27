@@ -41,7 +41,6 @@ nav {
 }
 
 #contain {
-    overflow-y: scroll;
     overflow-x: hidden;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
@@ -54,9 +53,9 @@ nav {
     #home {
         display: flex;
         width: 100%;
+        height: 100%;
         flex-direction: column;
         justify-content: space-between;
-        align-content: flex-start;
         overflow-y: scroll;
         overflow-x: hidden;
         h1 {
@@ -70,29 +69,25 @@ nav {
         p {
             width: 85%;
             transition: 0.7s;
-            border-radius: 30px;
             padding: 15px 0;
         }
 
-        .hidden {
-            opacity: 0;
-        }
-
-        .no-hidden {
-            opacity: 1;
-        }
 
         #presentation, #formation {
             position: relative;
             width: 100%;
-            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             transition: 1.2s;
+            padding: 15px 0;
         }
 
-        
+        ul {
+            text-align: start;
+            list-style: "- ";
+        }
+
     }
 }
 
@@ -396,6 +391,7 @@ nav {
             left: 15%;
             font-size: 0.9em;
         }
+
     }
 
     //*Projets
@@ -512,6 +508,16 @@ nav {
             padding: 5px;
             font-size: 0.9em;
         }
+
+
+        ul {
+            width: 50%;
+            margin: 0 auto;
+            text-align: start;
+            align-items: center;
+        }
+
+        
     }
     #projets {
 
@@ -706,30 +712,39 @@ nav {
     }
 
     #home {
-        h1 {
-            position: relative;
-            left: -5%;
-            width: 720px;
-            font-size: 6em;
-        }
-
-        p {
-            position: relative;
-            left: 5%;
-            word-break: normal;
-            font-size: 1.2em;
-        }
-
+        
+        
         #presentation, #formation {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
             width: 90%;
+            
+            h1 {
+                position: relative;
+                left: -5%;
+                width: 720px;
+                font-size: 5em;
+            }
+
+            p, ul {
+                position: relative;
+                left: 5%;
+                word-break: normal;
+            }
+
+            p, ul {
+                font-size: 1.2em;
+            }
+
+            ul {
+                width: 50%;
+                margin: 0 auto;
+                text-align: start;
+                align-items: center;
+            }
         }
 
-        #formation {
-            margin-bottom: 15%;
-        }
 
     }
     #projets {
@@ -849,18 +864,30 @@ nav {
     }
 
     #home {
-        h1 {
-            position: relative;
-            left: 2%;
-            width: 720px;
-            font-size: 9em;
-        }
+        #presentation, #formation {
+            align-items: unset !important; 
 
-        p {
-            letter-spacing: 1px;
-            position: relative;
-            left: 15%;
-            font-size: 3.2em;
+            h1 {
+                position: relative;
+                left: 0%;
+                width: 50%;
+                font-size: 9em;
+            }
+            
+            p, ul {
+                letter-spacing: 1px;
+                position: relative;
+                left: 10%;
+                padding: 15px 0;
+            }
+
+            p, ul {
+                font-size: 3.2em;
+            }
+
+            ul {
+                text-align: start;
+            }
         }
     }
 
