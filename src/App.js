@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import Home from './Home';
@@ -9,27 +10,9 @@ import github from './images/github.png';
 import Contact from './Contact';
 import Competences from './Competences';
 const tailleLogo = 65;
-var circleValue = 5;
+
 
 function App() {
-  //Si le cercle est cliqué le changer de couleur et mettre tout les autres en blanc
-  const gestionColorCircleSlide = (e) => {
-    //reset tout les cercles en gris 
-    document.querySelectorAll('.circleLink').forEach((circle) => {
-      circle.style.fill = "#c4c4c4"
-    
-    /* Si l'élément cliqué est un élément de la nav */
-    if (e.target.textContent) {
-      if(circle.id === `circle_${e.target.textContent.toLowerCase()}`){
-        circle.style.fill = "black";
-      }
-    }else{
-      e.target.style.fill = "black";
-    }
-  })
-
-  }
-
 
   return (
     <BrowserRouter basename = "Portfolio">
@@ -40,10 +23,10 @@ function App() {
 
           {/* Différente catégories */}
           <div id="categories">
-              <Link to ="/" onClick = {(e) => gestionColorCircleSlide(e)}>Accueil</Link>
-              <Link to ="/Projets" onClick = {(e) => gestionColorCircleSlide(e)}>Projets</Link>
-              <Link to ="/Competences" onClick = {(e) => gestionColorCircleSlide(e)}>Competences</Link>
-              <Link to ="/Contact" onClick = {(e) => gestionColorCircleSlide(e)}>Contact</Link>
+              <Link to ="/">Accueil</Link>
+              <Link to ="/Projets">Projets</Link>
+              <Link to ="/Competences">Competences</Link>
+              <Link to ="/Contact">Contact</Link>
           </div>
           {/* Logo pour les RS */}
           <div id = "reseaux">
@@ -69,33 +52,6 @@ function App() {
           </Route>
         </Switch>
         </div>
-
-        {/* Cercles pour situer les pages */}
-        <div className="ellipses">
-          <svg width = {`${circleValue*2}px`} height = {`${circleValue*2}px`} onClick = {(e) => gestionColorCircleSlide(e)}>
-            <Link to = "/">
-                  <circle className = "circleLink" id = "circle_accueil" cx = {`${circleValue}px`} cy = {`${circleValue}px`} r = {`${circleValue}px`} fill = "black"></circle>
-            </Link>
-          </svg>
-
-            <svg width = {`${circleValue*2}px`} height = {`${circleValue*2}px`} onClick = {(e) => gestionColorCircleSlide(e)}>
-          <Link to = "/Projets">
-                <circle className = "circleLink" id = "circle_projets" cx = {`${circleValue}px`} cy = {`${circleValue}px`} r = {`${circleValue}px`} fill = "#c4c4c4"></circle>
-          </Link>
-            </svg>
-
-            <svg width = {`${circleValue*2}px`} height = {`${circleValue*2}px`} onClick = {(e) => gestionColorCircleSlide(e)}>
-          <Link to = "/Competences">
-                <circle className = "circleLink" id = "circle_competences" cx = {`${circleValue}px`} cy = {`${circleValue}`} r = {`${circleValue}px`} fill = "#c4c4c4"></circle>
-          </Link>
-            </svg>
-            
-            <svg width = {`${circleValue*2}px`} height = {`${circleValue*2}px`} onClick = {(e) => gestionColorCircleSlide(e)}>
-          <Link to = "/contact">
-                <circle className = "circleLink" id = "circle_contact" cx = {`${circleValue}px`} cy = {`${circleValue}`} r = {`${circleValue}px`} fill = "#c4c4c4"></circle>
-          </Link>
-            </svg>
-      </div>
     </div>
     </BrowserRouter>
   );

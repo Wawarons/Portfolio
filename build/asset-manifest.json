@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.29a0f5b1.css",
-    "main.js": "/Portfolio/static/js/main.fb0dd9a8.js",
+    "main.css": "/Portfolio/static/css/main.2b7418fd.css",
+    "main.js": "/Portfolio/static/js/main.33564b23.js",
+    "static/media/minimalist-and-modern-future-hexagon.jpg": "/Portfolio/static/media/minimalist-and-modern-future-hexagon.fe12dafeff85cac0eabb.jpg",
     "static/media/FreeGamesProjet.png": "/Portfolio/static/media/FreeGamesProjet.aa5966b0a2f442a39451.png",
     "static/media/CalculatriceProjet.png": "/Portfolio/static/media/CalculatriceProjet.25053fc851b2add2333f.png",
     "static/media/PortfolioProjet.png": "/Portfolio/static/media/PortfolioProjet.4fffb9365264f8f0fd77.png",
     "static/media/Logo.png": "/Portfolio/static/media/Logo.df831f11de9a9d412e41.png",
     "index.html": "/Portfolio/index.html",
-    "main.29a0f5b1.css.map": "/Portfolio/static/css/main.29a0f5b1.css.map",
-    "main.fb0dd9a8.js.map": "/Portfolio/static/js/main.fb0dd9a8.js.map"
+    "main.2b7418fd.css.map": "/Portfolio/static/css/main.2b7418fd.css.map",
+    "main.33564b23.js.map": "/Portfolio/static/js/main.33564b23.js.map"
   },
   "entrypoints": [
-    "static/css/main.29a0f5b1.css",
-    "static/js/main.fb0dd9a8.js"
+    "static/css/main.2b7418fd.css",
+    "static/js/main.33564b23.js"
   ]
 }

@@ -1,8 +1,49 @@
 import React, { useEffect } from 'react';
+import CircleSvgCompetences from './dist/components/CircleSvgCompetences';
 
 const Competences = () => {
-    const tailleCircleSvg = 105;
+    const cirlceList = [
+        {
+            tailleCircleSvg: 105,
+            pourcentage: 95,
+            name: "Html", 
+            color: 'Orange'
+        },
+        {
+            tailleCircleSvg: 105,
+            pourcentage: 80,
+            name: "Css", 
+            color: 'skyblue'
+        },
+        {
+            tailleCircleSvg: 105,
+            pourcentage: 70,
+            name: "JavaScript", 
+            color: 'yellow'
+        },
+        {
+            tailleCircleSvg: 105,
+            pourcentage: 60,
+            name: "Scss", 
+            color: 'pink'
+        },
+        {
+            tailleCircleSvg: 105,
+            pourcentage: 50,
+            name: "React", 
+            color: 'blue'
+        }
+    ];
+    const ListCircleSvg = []; 
+    const CirclesSvg = () => {
+            cirlceList.forEach((circle, id) => {
+                ListCircleSvg.push(<CircleSvgCompetences key = {`circle_svg_${id}`} tailleCircleSvg={circle.tailleCircleSvg} pourcentage = {circle.pourcentage} name = {circle.name} color = {circle.color}></CircleSvgCompetences>);
+            });
+            return ListCircleSvg;
+    }    
+
     useEffect(() => {
+
         document.querySelectorAll(".circle_competences").forEach((circle) => {
             const pourcentage = circle.dataset.pourcentage;
             circle.style.strokeDashoffset = `${535 - (535*(pourcentage/100))}`
@@ -13,30 +54,7 @@ const Competences = () => {
     return (
         <div id="contain-competences">
         <div id = "competences">
-            <div className="svg-container">
-                <svg height= {`${tailleCircleSvg*2}`} width= {`${tailleCircleSvg*2}`}>
-                    <circle className = "circle_competences" data-pourcentage = "95" cx= {`${tailleCircleSvg}`} cy= {`${tailleCircleSvg}`} r= {`${tailleCircleSvg - 10}`} id = "circleSvg_html"/>
-                    <text x ="50%" y="50%" textAnchor = "middle">Html</text>
-                </svg>
-            </div>
-            <div className="svg-container">
-                <svg height= {`${tailleCircleSvg*2}`} width= {`${tailleCircleSvg*2}`}>
-                    <circle className = "circle_competences" data-pourcentage = "90" cx= {`${tailleCircleSvg}`} cy= {`${tailleCircleSvg}`} r= {`${tailleCircleSvg - 10}`} id = "circleSvg_css"/>
-                    <text x ="50%" y="50%" textAnchor = "middle">CSS</text>
-                </svg>
-            </div>
-            <div className="svg-container">
-                <svg height= {`${tailleCircleSvg*2}`} width= {`${tailleCircleSvg*2}`}>
-                    <circle className = "circle_competences" data-pourcentage = "70" cx= {`${tailleCircleSvg}`} cy= {`${tailleCircleSvg}`} r= {`${tailleCircleSvg - 10}`} id = "circleSvg_javascript"/>
-                    <text x ="50%" y="50%" textAnchor = "middle">JavaScript</text>
-                </svg>
-            </div>
-            <div className="svg-container">
-                <svg height= {`${tailleCircleSvg*2}`} width= {`${tailleCircleSvg*2}`}>
-                    <circle className = "circle_competences" data-pourcentage = "45" cx= {`${tailleCircleSvg}`} cy= {`${tailleCircleSvg}`} r= {`${tailleCircleSvg - 10}`} id = "circleSvg_sass"/>
-                    <text x ="50%" y="50%" textAnchor = "middle">Sass</text>
-                </svg>
-            </div>
+            {CirclesSvg()}
         </div>
         </div>
     );
