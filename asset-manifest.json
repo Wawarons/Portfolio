@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2b7418fd.css",
-    "main.js": "/Portfolio/static/js/main.33564b23.js",
-    "static/media/minimalist-and-modern-future-hexagon.jpg": "/Portfolio/static/media/minimalist-and-modern-future-hexagon.fe12dafeff85cac0eabb.jpg",
-    "static/media/FreeGamesProjet.png": "/Portfolio/static/media/FreeGamesProjet.aa5966b0a2f442a39451.png",
-    "static/media/CalculatriceProjet.png": "/Portfolio/static/media/CalculatriceProjet.25053fc851b2add2333f.png",
-    "static/media/PortfolioProjet.png": "/Portfolio/static/media/PortfolioProjet.4fffb9365264f8f0fd77.png",
-    "static/media/Logo.png": "/Portfolio/static/media/Logo.df831f11de9a9d412e41.png",
+    "main.css": "/Portfolio/static/css/main.62e69fd3.css",
+    "main.js": "/Portfolio/static/js/main.08ddeca6.js",
+    "static/media/minimalist-and-modern-future-hexagon.jpg": "/Portfolio/static/media/minimalist-and-modern-future-hexagon.2b69987262e118416197.jpg",
+    "static/media/FreeGamesProjet.png": "/Portfolio/static/media/FreeGamesProjet.e5117cbce5bfec7164eb.png",
+    "static/media/PortfolioProjet.png": "/Portfolio/static/media/PortfolioProjet.30415ac3bc5b718c0ac9.png",
+    "static/media/CalculatriceProjet.png": "/Portfolio/static/media/CalculatriceProjet.70c7221aa9cb4bebddd6.png",
     "index.html": "/Portfolio/index.html",
-    "main.2b7418fd.css.map": "/Portfolio/static/css/main.2b7418fd.css.map",
-    "main.33564b23.js.map": "/Portfolio/static/js/main.33564b23.js.map"
+    "main.62e69fd3.css.map": "/Portfolio/static/css/main.62e69fd3.css.map",
+    "main.08ddeca6.js.map": "/Portfolio/static/js/main.08ddeca6.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b7418fd.css",
-    "static/js/main.33564b23.js"
+    "static/css/main.62e69fd3.css",
+    "static/js/main.08ddeca6.js"
   ]
 }
