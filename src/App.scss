@@ -9,7 +9,6 @@
 
 .App {
     height: 100vh;
-    background: url(./images/minimalist-and-modern-future-hexagon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Fira Code", sans-serif;
@@ -29,7 +28,13 @@
     background-color: rgba(0, 0, 0, 0);
     border-radius: 20px;
 }
-
+#logo {
+    position: absolute;
+    left: 2%;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+}
 nav {
     #reseaux {
         img {
@@ -150,7 +155,7 @@ nav {
     #explication-projets {
         width: 95%;
 
-        @for $i from 1 through 3 {
+        @for $i from 1 through 4 {
             #projet-#{$i} {
                 display: flex;
                 flex-direction: column;
@@ -340,6 +345,9 @@ nav {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            width: fit-content;
+            margin: 15px auto;
+            align-items: center;
 
             a {
                 transition: 0.2s;
@@ -460,6 +468,9 @@ nav {
             padding: 15px 5px;
             display: flex;
             justify-content: space-around;
+            width: 75%;
+            margin: 15px auto;
+            align-items: center;
 
             a {
                 transition: 0.2s;
@@ -548,7 +559,7 @@ nav {
         }
         
         #explication-projets {
-            @for $i from 1 through 3 {
+            @for $i from 1 through 4 {
                 #projet-#{$i} {
                     display: flex;
                     flex-direction: column;
@@ -676,11 +687,11 @@ nav {
 @media screen and (min-width: 1024px) and (max-width: 1650px){
     #contain {height: 70vh;}
     nav {
-        width: 100%;
-        margin-top: 15px;
+        width: fit-content;
+        margin: 15px auto;
         display: flex;
-        align-items: center;
         font-size: 1.5em;
+        align-items: center;
 
         #categories {
             display: flex;
@@ -703,6 +714,8 @@ nav {
         }
 
         #reseaux {
+            position: absolute;
+            right: 5%;
             a {
                 margin: 0 15px;
             }
@@ -713,10 +726,6 @@ nav {
             }
         }
 
-        #logo {
-            width: 35px;
-            height: 35px;
-        }
     }
 
     #home {
@@ -833,8 +842,8 @@ nav {
 @media screen and (min-width: 1650px) {
     #contain {height: 75%;}
     nav {
-        width: 100%;
-        margin-top: 20px;
+        width: fit-content;
+        margin: 20px auto;
         display: flex;
         align-items: center;
         justify-content: space-around;

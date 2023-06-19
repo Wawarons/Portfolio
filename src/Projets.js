@@ -3,6 +3,7 @@ import ProjetsCard from './dist/components/ProjetsCard';
 import FreeGamesProjetImg from './images/FreeGamesProjet.png';
 import PortfolioProjetImg from './images/PortfolioProjet.png';
 import CalculatriceProjetImg from './images/CalculatriceProjet.png';
+import MovieDBProjetImg from './images/MovieDBProjet.png';
 import ProjetsFrame from './dist/components/ProjetsFrame';
 
 const Projets = () => {
@@ -49,7 +50,21 @@ const Projets = () => {
                         'number': 3, 
                         
                         'ProjetImg': CalculatriceProjetImg
-                    }
+                    },
+        {
+            'title': 'MovieDB',
+
+            'url': "https://wawadb.000webhostapp.com/src/login.php",
+
+            'description': "Site web permettant de visualiser les données de films, acteurs et de donner une note.", 
+
+            'langages': ['Javascript','HTML','CSS/SCSS', 'PHP'],
+            
+            'number': 4, 
+            
+            'ProjetImg': MovieDBProjetImg
+
+        }
 
     ]
 

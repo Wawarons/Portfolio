@@ -4,12 +4,9 @@ import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import Home from './Home';
 import Projets from './Projets';
 import logo from './images/Logo.png';
-import twitter from './images/twitter.png';
-import instagram from './images/instagram.png';
 import github from './images/github.png';
 import Contact from './Contact';
 import Competences from './Competences';
-const tailleLogo = 65;
 
 
 function App() {
@@ -19,7 +16,7 @@ function App() {
     <div className="App">
       {/* Barre de navigation */}
         <nav>
-          <img id = "logo" src = {logo} alt="logo" style = {{width: `${tailleLogo}px`, height: `${tailleLogo}px`}}/>
+          <img id = "logo" src = {logo} alt="logo" />
 
           {/* Différente catégories */}
           <div id="categories">
@@ -30,8 +27,6 @@ function App() {
           </div>
           {/* Logo pour les RS */}
           <div id = "reseaux">
-              <a href="https://twitter.com/Wawarons" target = "_blank" rel="noreferrer"><img src={twitter} alt="twitter logo" /></a>
-              <a href="https://instagram.com/adrien_pods" target = "_blank" rel="noreferrer"><img src={instagram} alt="instagram logo" /></a>
               <a href="https://github.com/Wawarons" target = "_blank" rel="noreferrer" ><img src={github} alt="github logo" /></a>
           </div>
         </nav>
