@@ -1,3 +1,3 @@
 # Portfolio
 
-<a href="https://wawarons.github.io/Portfolio">Visiter</a>
+<a href="https://wawarons.github.io/Portfolio" target="_blank">Portfolio :)</a>
