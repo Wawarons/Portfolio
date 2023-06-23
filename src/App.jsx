@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import {Redirect, BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import Home from './Home';
 import Projets from './Projets';
 import logo from './images/Logo.png';
@@ -12,7 +12,7 @@ import Competences from './Competences';
 function App() {
 
   return (
-    <BrowserRouter basename = "Portfolio">
+    <BrowserRouter basename = "/Portfolio">
     <div className="App">
       {/* Barre de navigation */}
         <nav>
@@ -44,6 +44,9 @@ function App() {
           </Route>
           <Route exact path = "/Competences">
             <Competences/>
+          </Route>
+          <Route exact path = "*">
+            <Redirect to='/' />
           </Route>
         </Switch>
         </div>

@@ -25,7 +25,7 @@ const Contact = () => {
         const emailTest = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             let emailUser = document.getElementById("user-email");
             document.querySelectorAll('.userInfo').forEach((input) => {
-                if(input.value === ""){
+                if(input.value.trim() === ""){
                     input.nextElementSibling.classList.add("error");
                 }else if(input.id === "user-email" && !emailTest.test(emailUser.value)){
                     input.nextElementSibling.classList.add("error");
